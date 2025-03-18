@@ -6,6 +6,9 @@
 trigger:
 - main
 
+pr:
+- main
+
 pool: openshift-agents-pkumari
 
 container: quay.io/redhat-appstudio/rhtap-task-runner:latest
