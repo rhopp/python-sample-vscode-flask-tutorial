@@ -11,7 +11,7 @@ pool: openshift-agents-pkumari
 container: quay.io/redhat-appstudio/rhtap-task-runner:latest
 
 variables:
-- group: acmiel-variables
+- group: pkumari-variables
 
 steps:
 - script: cosign version
