@@ -11,7 +11,9 @@ pr:
 
 pool: openshift-agents-pkumari
 
-container: quay.io/redhat-appstudio/rhtap-task-runner:latest
+container:
+  image: quay.io/redhat-appstudio/rhtap-task-runner:latest
+  mapDockerSocket: false
 
 variables:
 - group: pkumari-variables
