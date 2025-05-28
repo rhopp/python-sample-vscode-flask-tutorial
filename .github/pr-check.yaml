@@ -1,0 +1,17 @@
+name: PR Echo
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  echo_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo PR details
+        run: |
+          echo "This workflow was triggered by a pull request!"
+          echo "PR Number: ${{ github.event.pull_request.number }}"
+          echo "PR Title: ${{ github.event.pull_request.title }}"
+          echo "PR Branch: ${{ github.head_ref }}"
+          echo "Base Branch: ${{ github.base_ref }}"
